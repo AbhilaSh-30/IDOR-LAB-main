@@ -14,7 +14,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/api/details", {
+      const response = await axios.post("refrogue.vercel.app/api/details", {
         name,
         phn_num,
         role_id,
@@ -77,7 +77,7 @@ const Register = () => {
         <select
           name={role}
           onChange={(e) => { setRole(e.target.value); }}
-          className="border-b-2 border-green-400 focus:outline-none p-2 w-60 bg-gray-700 text-green-300 focus:border-green-400"    >
+          className="border-b-2 mr-7 border-green-400 focus:outline-none p-2 w-60 bg-gray-700 text-green-300 focus:border-green-400"    >
           <option value="Student">Student</option>
           <option value="Staff">Staff</option>
         </select>

@@ -97,7 +97,7 @@ function Profile() {
 
   const getDetails = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/getdetails", {
+      const response = await axios.get("refrogue.vercel.app/api/getdetails", {
         withCredentials: true,
       });
       if (response.status === 200) {
